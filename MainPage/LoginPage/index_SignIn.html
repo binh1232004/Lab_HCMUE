@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login</title>
+</head>
+<body>
+    <form action="javascript:void(0)" class = "login">
+        <!-- Must be form if have input and button
+        javascript:void(0) khong co link nao duoc gui di -->
+            <div class="login-field">
+                <i class='bx bxs-envelope login-icon'></i>
+                <input type="text" placeholder="Username" class="login-input" required >
+            </div>
+            <div class="login-field">
+                <i class='bx bxs-lock-alt login-icon' ></i>
+                <input type="password" placeholder="Password"  class="login-input" required >
+            </div>
+            <a href="/MainPage/SignUpPage/index.html" class="login-forgot-password">Create account</a>
+            <a href="/MainPage/index.html" style="text-decoration: none;"><button type = "button" class="login-submit">Login</button></a>
+            <!-- type="button" moi chuyen qua page main duoc khong duoc submit -->
+    </form>
+  
+</body>
+</html> 

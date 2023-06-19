@@ -1,0 +1,282 @@
+* {
+    /* In the beginning should give these value fisrt */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:  sans-serif;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    /* Khong hieu cai nay lam */
+    background-image: url(image/bg.png);
+    background-size: cover;
+    /* cover page */
+    background-position: center;
+    /* When adding img in page 
+    Note these value bgsize: cover bgposition: center */
+}
+/* navigate */
+section nav {
+    width: 100%;
+    display: flex;
+    /* convert logo and list  */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    /* justify-content: space-around (elments will
+    have their space between items   */
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    /* if z-index negative, selector does not have 
+    position and zindex will top of stack  */
+    box-shadow:0 0 10px #089da1 ;
+}
+section nav .logo img {
+    width: 100px;
+    margin: 8px 0;
+    cursor: pointer;
+}
+section nav ul {
+    list-style: none;
+}
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+section nav li a:hover{
+    color: #089da1;
+}
+ section nav .social-icons i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+section nav .social-icons a:visited {
+    color: black;
+}
+section nav .social-icons i:hover{
+    color: red;
+    cursor: pointer;
+} 
+.icon1::after {
+    content: "Sign In";
+    font-family:  sans-serif;
+    font-weight: 80;
+    font-size: 15px;
+    position: relative;
+    right: -9px;
+    top:-2px;
+    padding-right: 30px;
+    /* This is the way both i element and text are hovered */
+}
+.icon2::after {
+    content: "Rate For Us";
+    font-family:  sans-serif;
+    font-weight: 80;
+    font-size: 15px;
+    position: relative;
+    right: -9px;
+    top:-2px;
+}
+/* Main-page */
+section .main {
+    display: flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+section .main h1 {
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+section .main h1 span {
+    color: #089da1;
+}
+
+section .main p {
+    width: 500px;
+    text-align: justify;
+    /* justify: canh đều
+    text-align: giống như canh chỉnh trong word */
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+} 
+.main-btn {
+    background-color: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color:#fff;
+    text-decoration: none;
+}
+.main-img img {
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+/* Services */
+.services {
+    width: 100%;   
+    height: auto;
+    margin: 35px 0;
+}
+.services-box {
+    width: 95%;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.services-card {
+    text-align: center;
+    width: 310px;
+    box-shadow: 0 0 8px #089da1  ;
+    /* Go left to right if value is missing 
+    , go to next value
+    So this value mean x y blur color */
+    padding: 15px 10px;
+}
+
+.services-card i {
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.services-card h3 {
+    margin-bottom: 10px;
+}
+
+/* About */
+.about {
+    width: 100%;
+    height: auto;
+    /* values above is default */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-img img {
+    width: 800px;
+}
+
+.about-tag h1 {
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+.about-tag p {
+    line-height: 22px;
+    /* line-height use for text */
+    width: 500px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+.about-btn {
+    padding: 10px 20px;
+    background: #089da1;
+    color:#fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+/* Featured book */
+
+.featured-books {
+    margin-top: 40px;
+    padding: 70px 0px;
+
+}
+.featured-books h1 {
+    text-align: center;
+    padding-bottom: 35px;
+    font-size: 50px;
+}
+.feature-book-img img{
+    width: 150px;
+    height: 250px;
+    padding-top: 10px;
+}
+.featured-book-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    overflow:scroll hidden;
+}
+
+.feature-book-card {
+    padding: 0 50px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+.firstbook {
+    margin-left: 3310px;
+}
+.feature-book-card h2 {
+    padding-top: 10px;
+    text-align: center;
+    color: black;
+}
+.featurde_book_tag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #C9C7C8;
+}
+.categories {
+    text-align: center;
+    color: #089da1;
+}
+.f_btn {
+    text-decoration: none;
+    color: black;
+    border: 1px solid #089da1;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+.f_btn:hover {
+    color: white;
+    background-color: #089da1;
+}
+.feature-book-card:hover {
+    box-shadow: 0 0 10px 1px #089da1;
+}
+
+/*  */
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+
+ ::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb{
+    background: #089da1;
+    border-radius: 10px;
+} 

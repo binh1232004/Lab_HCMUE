@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;/
+    /* this font is awesome */
+}
+html {
+    background-image: linear-gradient(to bottom, #D9AFD9 , #97D9E1 );
+    /*bg-img
+    direction: to bottom, to left,...
+    color1,
+    color2 */
+    width: 100%;
+    height: 100%;
+    /* sometimes html page is not cover cover it by this way */
+}
+.login {
+    width: 300px;
+    display: block;
+    background-color: white;
+    padding: 50px;
+    margin: 100px auto;
+    /* margin: margin-top/bottom margin-left/right */
+    border-radius: 16px;   
+}
+.login:hover {
+    box-shadow: 0 0 10px 1px black;
+    /* box-shadow: x y blur scale color (count by px,...) */
+}
+.login-field {
+    display: flex;
+    flex-direction: row;
+    background-color: #f2f7ff;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16px;
+    padding: 12px;
+    margin-bottom: 20px;
+    max-width: 200px;
+}
+.login-icon {
+    /* Can use class like this fa login-icon ba
+    can use class fa or login-icon ba */
+    /* Những phần tử nào định dạng văn bản thì sẽ dùng font-size 
+    để thay đổi kích thước và giá trị width ở đây là chỉ block quanh font */
+    font-size: 18px;
+    /* margin-right: 50px;
+    ở đây thuộc tính mr có thể push phần tử ra được
+    vì nó không thuộc kích thước, nhớ rằng ở dạng flexbox
+    thì thông số kích thước bị giới hạn nên sẽ không bị đẩy ra */
+    width: 20px;
+}
+.login-input {
+    border: none;
+    outline: none;
+    /* erase border of input using border: none
+    outline used for when typing it exist the outline
+    outline: none to remove it  */
+    background-color: transparent;
+    /* if bgc transparent it will have same color as parent */
+    padding: 0 0 0 10px;
+    /* with four value is top right bottom left */
+   &::-webkit-input-placeholder{
+   color: #90a8cc ;
+   }
+   &::-moz-input-placeholder{
+   color: #90a8cc ;
+   }
+   /* phai co chu & */
+}
+.login-submit {
+    border-radius: 16px;
+    background-color: #435ebe;
+    border: none;
+    color: white;
+    display: block;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    cursor:pointer;
+    outline:none;
+}
+.login-forgot-password {
+    display: block;
+    /* display block moi dung duoc marin; */
+    /* margin: 0 0 15px 100px; 
+    can use this way to move to right
+    but use text align is convenient */
+    text-align: right;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 12px;
+    font-weight: 1000;
+    /* font-weight for bolding  */
+    outline: none;
+    text-decoration: none;
+    color: black;
+}

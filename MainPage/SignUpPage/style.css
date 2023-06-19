@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2f3f5;
+    /* Short hand
+    fcenter */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    background-image: linear-gradient(to right, #00DBDE , #FC00FF );
+    overflow-y: hidden;
+    
+}
+.sign-up {
+    margin-top: -16px;
+    padding: 10px 75px;
+    /* if not have width height 
+    padding/ margin counted for middle*/
+    /* if have not width heigth this boxed sign-up
+    base on its parent width : body */
+    background-color: #fff;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 30px;
+}
+.sign-up:hover {
+    box-shadow: 0 0 10px 1px #0093E9,0 0 30px 2px #80D0C7;
+}
+.title {
+    text-align: center;
+    /* Element text use text-align center to center it */
+    color: #373941;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 35px;
+}
+.button-field {
+    border: none;
+    outline: none;
+    width: 100%;
+    max-width: 450px;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 75px; 
+    border-radius: 20px;
+    height: 60px;
+    background-color: #0E92F3;
+    cursor: pointer;
+}
+.text-google {
+    color: #F2F8FF;
+    font-weight: bold;
+    font-size: 15px;
+}
+.facebook-icon {
+    color: #FFFFFF;
+    font-size: 40px;
+    width: 70px;
+    height: 50px;
+    background-color: #0E92F3;
+    margin-left: -120px;
+    border-radius: 20px;
+    padding-top: 5px;
+}
+/* OR */
+.sign-up-or {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.sign-up-or::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    top:50%;
+    left: 0;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+.sign-up-or span {
+    display: inline-block;
+    width: 50px;
+    height: 20px;
+    z-index: 1;
+    background-color: white;
+    
+    position: relative;
+    /* Classes have positions affect each other */
+}
+/* Signup Form */
+ .sign-up-form {
+    margin-top: 40px;
+}
+.sign-up-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.sign-up-field input {
+    padding: 15px 15px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #F2F0F6; 
+    &::-webkit-input-placeholder{
+    color:#BFBDE1 ;
+    }
+    &::-moz-input-placeholder{
+    color:#BFBDE1 ;
+    }
+    /* Using font size to change height width of input */
+}
+.sign-up-field span {
+    font-size: 15px;
+    font-weight: bold;
+} 
+/* Submit */
+.submit {
+    background-color: #78C021;
+    /* overload selector */
+    margin-top: 35px;
+    padding: 30px 0;
+}
+.submit p {
+    font-size: 20px;
+}
+
+/*Login  */
+.sign-up-login {
+    display: inline-block;
+    margin-top: 15px;
+    font-style: 10px;
+    padding-left: 90px;
+}
+.sign-up-login span {
+    padding-right: 10px;
+    font-weight: bold;
+}
+.sign-up-login a {
+    font-weight: bold;
+    text-decoration: none;
+}
